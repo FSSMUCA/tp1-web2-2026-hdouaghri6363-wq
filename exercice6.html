@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+</head>
+
+<body>
+    <h1> Calculatrice de cercle</h1>
+    <div id="rayon"></div>
+    <div id="perimetre"></div>
+    <div id="surface"></div>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+        const PI = Math.PI
+        let rayon = prompt("Entrez le rayon du cercle :")
+        rayon = parseFloat(rayon);
+        let perimetre = 2 * PI * rayon;
+        let surface = PI * rayon * rayon;
+        document.getElementById("rayon").textContent = `Rayon : ${rayon} cm`;
+        document.getElementById("perimetre").textContent = `Périmètre : valeur arrondie à 2 décimales ${perimetre.toFixed(2)} cm`;
+        document.getElementById("surface").textContent = `Surface : valeur arrondie à 2 décimales ${surface.toFixed(2)} cm²`;
+        // Votre code JavaScript ici
+    </script>
+</body>
+
+</html>
